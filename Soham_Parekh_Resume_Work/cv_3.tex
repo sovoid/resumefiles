@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.10\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Soham Parekh}\\\medskip % Your name
+	{\Huge\color{headings} Software Developer}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Relevant Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{}
+%{} % Employer | Job Title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Sept 2020} % Duration
+{FT} % FT/PT (full time or part time)
+{} 
+{Betterbank.app | \small{SDE Intern}} % Employer | Job Title
+{
+\textbullet{} Designed a performant backend GraphQL server. \\
+\textbullet{} Introduced IP-based rate limiting and other mechanisms to improve overall security of the app against DDoS and MITM attacks, CSRF and XSS. \\
+\textbullet{} Implemented a distributed queuing system using producer-consumer model to offload heavy background jobs. \\
+\textbullet{} Refactored and improved existing test coverage by 31\%
+} % Description
+
+%------------------------------------------------
+
+\workposition{May 2020 -- Sept 2020} % Duration
+{FT} % FT/PT (full time or part time)
+{}
+{Wikimedia Foundation | \small{Google Summer of Code Developer}} % Job title
+{
+\textbullet{} Investigated Puppeteer with Jest and Cypress. \\
+\textbullet{} Introduced an out-of-the-box solution for recording videos of Puppeteer tests. \\
+\textbullet{} Designed a custom Jest preset to spin up environment for Mediawiki tests.
+}  % Description
+
+%------------------------------------------------
+
+\workposition{Dec 2019 -- March 2020} % Duration
+{FT} % FT/PT (full time or part time)
+{} % Employer
+{Falkonry | \small{SDE Intern}} % Job title
+{
+\textbullet{} Redesigned and programmed their CI/CD bot to work with multiple GitHub repositories and custom configurations. \\
+\textbullet{} Developed a mechanism to create Kubernetes deployments in a completely air-gapped hybrid environment. \\
+\textbullet{} Devised custom methods to efficiently query and parse environment logs, reducing the computation time by 34.83\%.
+} % Description
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Selected Projects}
+
+\workposition{Ongoing, May 2019} % Duration
+{}
+{}
+{Hydrabot: Automation Bot} % Project title
+{
+\textbullet{} Programmed a configurable  automation bot for GitOps workflows. \\
+\textbullet{} Integrated issue auto-labelling using unsupervised Graph-based Topic Labeling. \\
+\textbullet{} Orchestrated a highly available cluster capable of handing 5000 req/minute.
+} % Description
+
+\workposition{Jan 2020 -- Sept 2020} % Duration
+{}
+{}
+{ApplyByAI: Recruitment Platform} % Project title
+{
+\textbullet{} Proposed a novel Recruitment System based on Big5 personality analysis, skill matching and large scale hybrid filtering. \\
+\textbullet{} Utilized contextual information using tone and sentiment analysis of user responses. \\
+\textbullet{} Conserved 22.3\% time spent during college committee interviews.
+} % Description
+
+\workposition{May 2019 -- April 2020} % Duration
+{}
+{}
+{Friendly: Social Network} % Project title
+{
+\textbullet{} Ideated \& led research on a novel Friend Recommendation System using Big5 personality analysis \& hybrid filtering. \\
+\textbullet{} Outperformed traditional systems with an average personality match of 83.27\%.
+} % Description
+
+\workposition{Feb 2019 -- Sept 2019} % Duration
+{}
+{}
+{Human Detection in post-disaster LWIR Imagery} % Project title
+{
+\textbullet{} Proposed a novel algorithm to detect humans in low resolution infrared-imagery. \\
+\textbullet{} Leveraged Maximally Stable Extremal Hotspots as key points for edge detection. \\
+\textbullet{} Trained a Bayesian Classifier on hot spots processed using Discrete cosine transform as a descriptor. \\
+\textbullet{} Achieved  87.527\% accuracy on OTCBVS Dataset.
+} % Description
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.10\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Mumbai, India \\ % Address
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:soham.parekh1998@gmail.com}{soham.parekh1998@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://sohamp.dev}{https://sohamp.dev} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/und3fined-v01d}{https://github.com/und3fined-v01d} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://linkedin.com/in/soham-parekh}{https://linkedin.com/in/soham-parekh} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2017 -- 2021} % Duration
+	{B.E. Computer Engineering} % Degree
+	{Cum. GPA: 9.78/10} % Honours, achievements or distinctions (e.g. first class honours)
+	{D.J. Sanghvi College of Engineering} % Department
+	{University of Mumbai} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Programming}{\textit{over 5000 lines:}}{}
+	\tableentry{}{C/C++, Javascript, Python, Go,}{}
+	\tableentry{}{\textit{over 1000 lines:}}{}
+	\tableentry{}{Rust, Java, Bash, Haskell}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Web}{React, Vue.js, Node.js, Django,}{}
+	\tableentry{Development}{Flask, GraphQL, Rest}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Devops \&}{Jenkins, Docker, Kubernetes,}{}
+	\tableentry{Testing}{Ansible, ELK Stack, Jest, Cypress,}{}
+	\tableentry{}{Puppeteer, WebdriverIO}{spaceafter}
+	
+	%------------------------------------------------
+	
+	%------------------------------------------------
+	
+	\tableentry{Libraries \&}{Numpy, Pandas, NLTK, Pytorch,}{}
+	\tableentry{Frameworks}{Scikit-learn, Tensorflow, Electron}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2020}{\textbf{Winner -- HackerEarth Recruit-a-thon}}{}
+	\tableentry{}{\textit{among 2428 participating teams}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2020}{\textbf{Winner -- JP Morgan Code for Good}}{}
+	\tableentry{}{\textit{among 80 participating teams}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2020}{\textbf{Top 20 -- IBM Hack Challenge}}{}
+	\tableentry{}{\textit{among 800 participating teams}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP
+%----------------------------------------------------------------------------------------
+
+\section{Leadership}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	\tableentry{Mentor}{Script Winter of Code}{}
+	\tableentry{(Dec 2020 - Present)}{}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Outreachy Mentor}{Wikimedia Foundation}{}
+	\tableentry{(Oct 2020 - Present)}{}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{GSoC Co-mentor}{Cloud Native Computing}{}
+	\tableentry{(May - Sept 2020)}{Foundation}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Placement Coordinator}{DJ Sanghvi Placement}{}
+	\tableentry{(Jan - Nov 2020)}{Department}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	Volunteer Work
+%----------------------------------------------------------------------------------------
+
+\section{Volunteer Work}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Open Source Developer}{Wikimedia Foundation}{spaceafter}
+	
+	%------------------------------------------------
+	
+% 	\tableentry{Open Source Developer}{Cypress.io}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Open Source Developer}{Jest (Facebook)}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Open Source Developer}{Taskforce.sh}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Certifications}
+
+\begin{enumerate}
+    \item Machine Learning with Python -- IBM (2020)
+    \item Data Analysis using Python -- IBM (2020)
+    \item Cloud Core -- IBM (2020)
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
